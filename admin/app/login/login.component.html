@@ -1,0 +1,39 @@
+<!-- main container start herer -->
+<div class="main-container login-page">
+    <div class="container">
+        <div class="management-login">
+            <div class="logo">
+                <a href="#"></a><img src="assets/images/logo.jpg"></div>
+
+            <!-- login- form start herer -->
+            <div class="form-div">
+                <h3 class="heading-name">Login</h3>
+                <ul class="input-fields">
+                    <li class="list">
+                        <label class="title"> Username</label>
+                        <input type="text" name="username" class="input-box" [(ngModel)]="username" placeholder="Enter User name ">
+                    </li>
+                    <li class="list ">
+                        <label class="title "> Password</label>
+                        <input type="password " name="password " class="input-box " [(ngModel)]="password " placeholder="Password ">
+                    </li>
+                    <li class="list ">
+                        <div class="remember ">
+                            <label>
+								<input type="checkbox" name="rememberme" class="checkbox" value="true">
+								Remember Me
+							</label>
+                        </div>
+                        <button type="button " (click)="showpassword()" class="submit-btn right " value="Log In ">Log In</button>
+                    </li>
+                    <span class="row center margin-top-10px "><a href="assets/forgot.html " class="forgot-btn ">Lost your password?</a></span>
+                </ul>
+            </div>
+            <!-- login- form end herer -->
+
+            <p class="copyright ">Copyright Holidaysbookers.com</p>
+
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
